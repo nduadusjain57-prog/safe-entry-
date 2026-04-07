@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeEntry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2 class="logo">safe entry</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Service</a>
+    <a href="#safety">Safety</a>
+    <a href="#login">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="circle"></div>
+  <h1>safe entry</h1>
+  <p>Know who enters. Know when they leave. Every time.</p>
+  <button onclick="scrollToBooking()">Book Now</button>
+</section>
+
+<section id="services" class="services">
+  <h2>Book Verified Workers</h2>
+
+  <div class="booking-box">
+    <select id="service">
+      <option>Electrician</option>
+      <option>Plumber</option>
+      <option>Carpenter</option>
+    </select>
+
+    <input type="date" id="date">
+    <input type="time" id="time">
+
+    <button onclick="bookSlot()">Confirm Booking</button>
+  </div>
+
+  <p id="confirmation"></p>
+</section>
+
+<section id="safety" class="safety">
+  <h2>Women Safety Features</h2>
+
+  <div class="features">
+    <div class="card">✅ Verified Workers (Aadhaar + Background)</div>
+    <div class="card">📍 Live Location Tracking</div>
+    <div class="card">⏱ Auto Check-Out Alert</div>
+    <div class="card">🚨 SOS Emergency Button</div>
+  </div>
+
+  <button class="sos" onclick="triggerSOS()">🚨 SOS</button>
+</section>
+
+<section id="login" class="login">
+  <h2>Login</h2>
+
+  <input type="text" placeholder="Email" id="email">
+  <input type="password" placeholder="Password" id="password">
+
+  <button onclick="login()">Login</button>
+  <p id="loginStatus"></p>
+</section>
+
+<footer>
+  <p>© 2026 SafeEntry</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

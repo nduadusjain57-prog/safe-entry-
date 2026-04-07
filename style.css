@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f7fb;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  color: #2d5bff;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  background: #e6ecff;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: #2d5bff;
+}
+
+.hero button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  background: #2d5bff;
+  color: white;
+  border: none;
+}
+
+.services, .safety, .login {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.booking-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.sos {
+  margin-top: 20px;
+  padding: 15px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
